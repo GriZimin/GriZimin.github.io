@@ -8,7 +8,7 @@
 /* Set font and background color */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background-color: #fff;
   color: #333;
 }
 
@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #636FAB;
   color: #fff;
 }
 
@@ -55,19 +55,96 @@ section h2 {
   margin-bottom: 20px;
   font-size: 30px;
   color: #333;
+  animation: fadeInUp 1s;
 }
 
-section p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #666;
-}
-
-ul {
+section ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-li {
-  width: calc(50% - 
+section li {
+  flex-basis: 33%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+section li:hover {
+  transform: scale(1.1);
+}
+
+section li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #636FAB;
+}
+
+section li p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #636FAB;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #636FAB;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+button[type="submit"]:hover {
+  background-color: #f8f8f8;
+  color: #636FAB;
+}
+
+footer {
+  text-align: center;
+  background-color: #636FAB;
+  color: #fff;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to
