@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  color: #333;
 }
 
 /* Header styles */
@@ -32,6 +33,13 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f8f8f8;
 }
 
 /* Main styles */
@@ -45,6 +53,14 @@ section {
 
 section h2 {
   margin-bottom: 20px;
+  font-size: 30px;
+  color: #333;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
 }
 
 ul {
@@ -54,30 +70,4 @@ ul {
 }
 
 li {
-  width: calc(50% - 20px);
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
-li:last-child {
-  margin-right: 0;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color
+  width: calc(50% - 
